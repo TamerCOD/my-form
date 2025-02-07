@@ -64,13 +64,17 @@ document.addEventListener("DOMContentLoaded", function() {
             students
         };
 
-        fetch("https://script.google.com/macros/s/AKfycbyBo8XgQQujrLVx9epgqfkKMIx455NL-K80-Py8c6huqxYKoagAgUf9a60qIl-DFqCpLQ/exec", {
-            method: "POST",
-            body: JSON.stringify(formData),
-            headers: { "Content-Type": "application/json" }
-        })
-        .then(response => response.json())
-        .then(data => alert("Данные отправлены!"))
-        .catch(error => console.error("Ошибка:", error));
+        fetch("https://script.google.com/macros/s/AKfycbzNoG1N8ZwohGTFdzRPiWuVLPD5AQCGXUpCQBe_tHkjT6_WM0GouQPZRDASYxlEEDICjQ/exec", {
+    method: "POST",
+    mode: "cors", // Разрешаем CORS
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify(formData)
+})
+.then(response => response.json())
+.then(data => alert("Данные отправлены!"))
+.catch(error => console.error("Ошибка:", error));
+
     });
 });
