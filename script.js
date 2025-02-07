@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
             students
         };
 
-        fetch("https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec", {
+        fetch("https://script.google.com/macros/s/AKfycbyBo8XgQQujrLVx9epgqfkKMIx455NL-K80-Py8c6huqxYKoagAgUf9a60qIl-DFqCpLQ/exec", {
             method: "POST",
             body: JSON.stringify(formData),
             headers: { "Content-Type": "application/json" }
