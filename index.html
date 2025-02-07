@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма записи</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Форма записи</h1>
+
+        <label for="stream">Поток:</label>
+        <input type="text" id="stream" placeholder="Введите поток">
+
+        <label for="date">Дата:</label>
+        <input type="date" id="date">
+
+        <label for="department">Подразделение:</label>
+        <select id="department">
+            <option value="NUR">NUR</option>
+            <option value="Saima">Saima</option>
+            <option value="GREEN">GREEN</option>
+            <option value="Telemarketing">Telemarketing</option>
+        </select>
+
+        <h2>Список участников</h2>
+        <div id="students-list">
+            <!-- Поля для ФИО и выпадающего списка будут здесь -->
+        </div>
+
+        <button id="add-student">+</button>
+        <button id="submit">Отправить</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
